@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import {
-    TaskList
+    TaskList,
+    AddTaskForm
 } from './components';
 
 
@@ -20,8 +21,12 @@ const App = () => {
         }
     ]);
 
-    const addTaskHandler = () => {
-
+    const addTaskHandler = task => {
+        if (task !== "") {
+            setTasks([
+                ...tasks, { id: 4, name: task }
+            ])
+        }
     }
 
     const removeTaskHandler = id => {
@@ -33,6 +38,7 @@ const App = () => {
     return (
         <div>
             <h1>React To DO!</h1>
+            <AddTaskForm addTaskHandler={ addTaskHandler } />
             <TaskList tasks={ tasks } removeTaskHandler={ removeTaskHandler } />
         </div>
     )
