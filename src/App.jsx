@@ -3,7 +3,7 @@ import {
     TaskList,
     AddTaskForm
 } from './components';
-
+import "./App.css";
 
 const App = () => {
     const [ tasks, setTasks ] = useState([
@@ -36,8 +36,8 @@ const App = () => {
 
 
     return (
-        <div>
-            <h1>React To DO!</h1>
+        <div className="MainContainer" >
+            <h1 className="Title" >React Task Master!</h1>
             <AddTaskForm addTaskHandler={ addTaskHandler } />
             <TaskList tasks={ tasks } removeTaskHandler={ removeTaskHandler } />
         </div>
