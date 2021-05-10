@@ -8,3 +8,9 @@
 	font-size: 2.4rem;
 	margin-bottom: 3rem;
 }
+
+.EmptyListText {
+	font-size: 1.4rem;
+	letter-spacing: 0.1rem;
+	color: #ce1300;
+}

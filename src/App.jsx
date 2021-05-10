@@ -20,7 +20,7 @@ const App = () => {
             name: "Code!"
         }
     ]);
-
+    
     const addTaskHandler = task => {
         if (task !== "") {
             setTasks([
