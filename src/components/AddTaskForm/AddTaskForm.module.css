@@ -8,7 +8,6 @@
 }
 
 .TextField {
-	width: 30%;
 	padding: 1rem;
 	margin-right: 1rem;
 	color: inherit;
@@ -26,7 +25,6 @@
 	cursor: pointer;
 	border: none;
 	border-radius: 0.5rem;
-	width: 5%;
 	padding: 1rem 2rem;
 	background-color: green;
 	color: #fafafa;

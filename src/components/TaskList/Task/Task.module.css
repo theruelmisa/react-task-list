@@ -1,0 +1,29 @@
+.Task {
+	cursor: pointer;
+	margin-bottom: 1.5rem;
+	padding: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border: 1px solid #cdcdcd;
+	transition: 0.3s all;
+}
+
+.Task:hover {
+	box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.Task > p {
+	font-size: 1.5rem;
+}
+
+.Done {
+	text-decoration: line-through;
+	color: #ce1300;
+}
+
+.Delete {
+	cursor: pointer;
+	font-size: 1.2rem;
+	color: #999;
+}
